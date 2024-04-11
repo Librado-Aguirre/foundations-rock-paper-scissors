@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissor</title>
 </head>
 <Header>
     <h1>Lets Play Rock, Paper, Scissor</h1>
@@ -21,10 +21,10 @@
     let userwon=0;
     let computerwon=0;
     
-    for (i = 1; i<=2; i++){
+    for (i = 1; i<=1; i++){
     
         let computerChoice =ComputerSelection();
-        let userSelection =prompt("Lets Play Rock, Paper, Scissors");
+        let userSelection =prompt("Lets Play Rock, Paper, Scissors. User: " + userwon + " Computer: " + computerwon);
  
         console.log(userSelection +" is user selection");
         console.log(computerChoice +" is computer selection");
@@ -33,6 +33,7 @@
             userwon = userwon + 1;
             computerwon = computerwon + 1;
             console.log("User: " + userwon + " Computer: " + computerwon + " Is a tight");
+
         }else if (computerChoice=="Rock" && userSelection == "Paper"){
             userwon = userwon + 1;
             console.log("User: " + userwon + " Computer: " + computerwon + " You won, paper wraps rock!");
@@ -67,6 +68,7 @@
             let result = ("User: " + userwon + " Computer: " + computerwon + " is a tight!");
             document.getElementById("demo").innerHTML = result;
         }
+        console.log("User: " + userwon + " Computer: " + computerwon);
         let result = ("User: " + userwon + " Computer: " + computerwon);
             document.getElementById("demo").innerHTML = result;
     }           
